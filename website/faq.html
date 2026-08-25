@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ — MacClipboard</title>
+  <meta name="description" content="Answers for installing, shortcuts, Accessibility, and privacy in MacClipboard.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./"><img class="mark" src="./favicon.svg" alt="" width="28" height="28">MacClipboard</a>
+      <nav class="desktop-nav">
+        <a href="./releases.html">Releases</a>
+        <a href="./faq.html">FAQ</a>
+        <a href="./support.html">Support us</a>
+        <a href="./contact.html">Contact</a>
+        <a class="btn btn-dark btn-sm" href="./downloads/MacClipboard.zip">Download</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap legal">
+    <p class="kicker">FAQ</p>
+    <h1>Frequently asked questions</h1>
+    <p>Everything you need to know about MacClipboard. Can’t find an answer? Open an issue on <a href="https://github.com/ataarehman/Macclipboard/issues">GitHub</a>.</p>
+
+    <details class="faq-item" open>
+      <summary>How do I open clipboard history?</summary>
+      <p>Copy as usual with ⌘C, then press <span class="kbd">⌃⌥V</span>. Use the arrow keys and Enter to paste into the app you were using. Change the shortcut in Settings → Keyboard.</p>
+    </details>
+    <details class="faq-item">
+      <summary>macOS says the app can’t be opened</summary>
+      <p>This build is ad-hoc signed, so Gatekeeper may block it. Click <strong>Done</strong>, then System Settings → Privacy &amp; Security → <strong>Open Anyway</strong>. Or run:</p>
+      <p><span class="kbd">xattr -cr /Applications/MacClipboard.app</span></p>
+      <p>Full steps are on the <a href="./install.html">install page</a>.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Why does it ask for Accessibility?</summary>
+      <p>Automatic paste needs Accessibility so MacClipboard can return to the previous app and send ⌘V. History, search, and pin still work if you decline — you would then paste with ⌘V yourself.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does my clipboard leave this Mac?</summary>
+      <p>No. There are no accounts, analytics, or cloud sync. History lives at <span class="kbd">~/Library/Application Support/MacClipboard</span>. See <a href="./privacy.html">Privacy</a>.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I hide password copies?</summary>
+      <p>Add password managers and banking apps to excluded applications, pause monitoring, or clear history. Transient and concealed pasteboard markers are skipped when other apps set them.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does it run on Intel Macs?</summary>
+      <p>No. This build is Apple Silicon only (M1 and later) on macOS 14+.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How do I move the menu bar icon?</summary>
+      <p>Hold ⌘, then drag the MacClipboard icon to a new place in the menu bar.</p>
+    </details>
+  </main>
+  <nav class="support-nav" aria-label="Support">
+    <div class="wrap support-nav-inner">
+      <a href="./releases.html">Releases</a>
+      <a class="is-current" href="./faq.html" aria-current="page">FAQ</a>
+      <a href="./support.html">Support us</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </nav>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Free for personal use. Your clipboard stays on this Mac.</p>
+      <p><a href="./privacy.html">Privacy</a><a href="./install.html">Install</a></p>
+    </div>
+  </footer>
+</body>
+</html>

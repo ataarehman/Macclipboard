@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Install MacClipboard</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./"><img class="mark" src="./favicon.svg" alt="" width="28" height="28">MacClipboard</a>
+      <nav class="desktop-nav">
+        <a href="./releases.html">Releases</a>
+        <a href="./faq.html">FAQ</a>
+        <a href="./support.html">Support us</a>
+        <a href="./contact.html">Contact</a>
+        <a class="btn btn-dark btn-sm" href="./downloads/MacClipboard.zip">Download</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap legal">
+    <p class="kicker">Install</p>
+    <h1>Get it running on your MacBook</h1>
+    <ol>
+      <li>Download <a href="./downloads/MacClipboard.zip">MacClipboard.zip</a> and unzip it.</li>
+      <li>Drag <strong>MacClipboard.app</strong> into Applications.</li>
+      <li>Open it. If macOS says it could not verify the app, click <strong>Done</strong>, not Move to Trash.</li>
+      <li>System Settings → Privacy &amp; Security → <strong>Open Anyway</strong>.</li>
+      <li>Enable Accessibility so Enter can paste into the previous app.</li>
+    </ol>
+    <p>Terminal, after the app is in Applications:</p>
+    <p><span class="kbd">xattr -cr /Applications/MacClipboard.app && open /Applications/MacClipboard.app</span></p>
+    <p>Default shortcut is <span class="kbd">⌃⌥V</span>. Requires macOS 14+ on Apple Silicon.</p>
+  </main>
+  <nav class="support-nav" aria-label="Support">
+    <div class="wrap support-nav-inner">
+      <a href="./releases.html">Releases</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./support.html">Support us</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </nav>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Free for personal use. Your clipboard stays on this Mac.</p>
+      <p><a href="./privacy.html">Privacy</a><a href="./faq.html">FAQ</a></p>
+    </div>
+  </footer>
+</body>
+</html>
