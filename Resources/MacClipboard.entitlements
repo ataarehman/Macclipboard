@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Intentionally unsandboxed. App Sandbox blocks CGEvent.post and session CGEventTap,
+	     which are required for global hotkeys in Cursor/Zed and for Command-V paste injection.
+	     This is a personal, direct-distributed utility, not a Mac App Store app. -->
+</dict>
+</plist>
